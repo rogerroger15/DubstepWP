@@ -1,0 +1,216 @@
+@font-face {
+    font-family: xen-galaxy;
+    src: url(../Tipografia/big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: coachella;
+    src: url(../Tipografia/coachella.otf);
+}
+
+@font-face {
+    font-family: bass;
+    src: url(../Tipografia/BASE.ttf);
+}
+
+
+
+body{
+    background-color:black;
+    height:100%;
+    width:100%;
+    background: url(../fotos/eskere.png) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: #211915;
+
+    
+
+}
+
+
+
+
+footer{
+    display: flex;
+    font-family: xen-galaxy;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 2%;
+    margin-left: 37%;
+
+}
+
+.footer_m{
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 20px;
+    width: 3%;
+    height: 8%;
+    display: flex;
+}
+
+
+header,li{
+    text-decoration: none;
+    align-content: center;
+    display: inline;
+    color: white;
+    font-family: xen-galaxy;
+    font-size: 1.3em;
+
+    
+}
+
+.navegacio,a:hover{
+    text-decoration: underline;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    background-size: contain;
+    left: 0;
+    top: 0;
+    background: rgba(7, 3, 18, 0.5);
+    display: flex;
+}
+
+.logo{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.navegacio,a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20%;
+
+}
+
+.navegacio{
+    right: 0;
+    padding-left: 15%;
+    display: flex;
+    margin-top: 11%;
+    margin-left: -5%;
+}
+
+.xarxes{
+    right: 0;
+    padding-left: 36%;
+    margin-left: 7%;
+    display: flex;
+    margin-top: 3%;
+}
+
+.xarxes img{
+    margin-left: 22%;
+}
+
+.nav{
+    display: inline;
+}
+
+
+.carousel {
+    margin-top: 11%;
+    margin-left: 18%;
+    position:relative;
+    width:65%;
+    border:2px solid white;
+    box-shadow:0px 0px 40px #000;
+  }
+  .carousel > img {
+    display:none;
+    width:100%;
+  }
+  .carousel > input {
+    position:absolute;
+    left:-9999px;
+  }
+  .carousel > input:checked + label + img {
+    display:block;
+  }
+  
+  .carousel > label,
+  .carousel > input:checked ~ label ~ label ~ label ~ label {
+    display:none;
+  }
+  .carousel > input:checked + label {
+    display:block;
+    left:0;
+  }
+  .carousel > input:checked ~ label ~ label ~ label {
+    display:block;
+    right:0;
+  }
+  
+  .carousel > label {
+    position:absolute;
+    top:0;
+    width:25%;
+    height:100%;
+    visibility:hidden;
+  }
+  .carousel > label:before {
+    content:'';
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    visibility:visible;
+  }
+  .carousel > label:after {
+    display:block;
+    position:absolute;
+    top:50%;
+    width:25px;
+    height:25px;
+    line-height:22px;
+    margin:-15px 10px 0 10px;
+    background-color:black;
+    color:white;
+    font-family:'Arial';
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    visibility:hidden;
+    border:2px solid white;
+    border-radius:20px;
+    box-shadow:0 3px 4px black;
+  }
+  .carousel > label:hover:after {
+    visibility:visible;
+  }
+  
+  .carousel > input:checked + label:after {
+    left:0;
+    content:'\00AB';
+  }
+  .carousel > input:checked ~ label ~ label ~ label:after {
+    right:0;
+    content:'\00BB';
+  }
+  
+  
+nav.style {
+    margin-top: 1.5%;
+}
+  
+

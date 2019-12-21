@@ -1,0 +1,199 @@
+@font-face {
+    font-family: xen-galaxy;
+    src: url(../Tipografia/big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: coachella;
+    src: url(../Tipografia/coachella.otf);
+}
+
+@font-face {
+    font-family: bass;
+    src: url(../Tipografia/BASE.ttf);
+}
+
+
+
+
+
+body{
+    background-color:black;
+    height:100%;
+    width:100%;
+    background: url(../fotos/eskere.png) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: #211915;
+
+    
+
+}
+
+.title{
+    font-family: bass;
+    font-size: 2.5em;
+    padding-bottom: 0%;
+    margin-top: 3%;
+    color: white;    
+
+}
+
+.explicacio{
+    font-family: coachella;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 15%;
+
+}
+
+.explicacio,p{
+    text-shadow: 0.1em 0.1em black;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    font-family: xen-galaxy;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 2%;
+    margin-left: 37%;
+
+}
+
+.footer_m{
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 6%;
+    width: 3%;
+    height: 8%;
+    display: flex;
+}
+
+
+header,li{
+    text-decoration: none;
+    align-content: center;
+    display: inline;
+    color: white;
+    font-family: xen-galaxy;
+    font-size: 1.3em;
+
+    
+}
+
+.navegacio,a:hover{
+    text-decoration: underline;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    background-size: contain;
+    left: 0;
+    top: 0;
+    background: rgba(7, 3, 18, 0.5);
+    display: flex;
+}
+
+.logo{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.navegacio,a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20%;
+
+}
+
+.navegacio{
+    right: 0;
+    padding-left: 15%;
+    display: flex;
+    margin-top: 11%;
+    margin-left: -5%;
+}
+
+.xarxes{
+    right: 0;
+    padding-left: 38%;
+    margin-left: 7%;
+    display: flex;
+    margin-top: 3%;
+}
+
+.xarxes img{
+    margin-left: 22%;
+}
+
+.nav{
+    display: inline;
+}
+
+.container,hr{
+    margin-top: 5%;
+}
+
+.novetats{
+    color: white;
+    font-family: xen-galaxy;
+    font-size: 1.5em;
+    display: flex;
+    left: 0%;
+    margin-top: 2%;
+    margin-left: 13%;
+}
+
+.fotos_nov{
+    display: flex;
+     
+}
+
+.fotos_nov img{
+    border: white 1px solid;
+    margin-left: 13.5%;
+}
+
+nav.style {
+    margin-top: 1.5%;
+}
+
+#botoTop{
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: gray; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    font-family: xen-galaxy;
+  }
+
+  #myBtn:hover {
+    background-color: black;
+  }
+  

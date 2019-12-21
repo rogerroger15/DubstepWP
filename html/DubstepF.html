@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+<style></style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DubstepPpc</title>
+    <link rel= "stylesheet" type="text/css" href="../css/DubstepF.css">
+</head>
+<header>
+    <div class="logo">
+        <a title="Inici" href="../index.html"><img src="../fotos/letter_d_PNG41.png" alt="Inici" height="100" width="100"></a>
+    </div>
+    
+    <nav>
+        <ul class="navegacio">
+            <li><a href="../html/DubstepH.html">HISTORIA</a></li>
+            <li><a href="../html/DubstepF.html">FESTIVALS</a></li>
+            <li><a href="../html/DubstepG.html">GALERIA</a></li>
+        </ul>
+            
+    </nav>  
+    <div class="xarxes">
+        <img src="../fotos/instagram.png" alt="Instagram" height="40" width="40"></a>
+        <img src="../fotos/twitter.png" alt="Twitter" height="40" width="40"></a>
+        <img src="../fotos/facebook.png" alt="Facebook" height="40" width="40"></a>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="festi">
+            <div class="title">
+                <p>Tomorrowland</p>
+            </div>
+            <div class="text">
+                <p>Tomorrowland es un festival de música electrónica de baile celebración anualmente en la localidad de Boom (Bélgica). El festival está organizada por </p>
+                <p>ID & T y se calcula que anualmente ocurren más de 400.000 personas de casi 200 nacionalidades distintas. Se </p>
+                <p>oficialmente el festival más grande del planeta.</p>
+            </div>
+            <div class="foto" >
+                <img src="../fotos/tomorrowland.jpg" alt="Instagram" height="275" width="625"></a>
+            </div>
+            <div id="map"></div>
+            <hr color="white" width="100%" size="2" >
+            <div class="title">
+                <p>Bass Canyon</p>
+            </div>
+            <div class="text">
+                <p>Bass Canyon és un dels festivals de dubstep més reconeguts d'Estats Units ja que el va crear l'Excision, un dels</p>
+                <p>DJs de Dubstep més reconeguts per no dir que és el 2n més conegut dins del genere actualment. Esta situat a </p>
+                <p>The Gorge Amphitheater, George, Washington, USA.</p>
+            </div>
+            <div class="foto">
+                <img src="../fotos/BassCanyon2.jpg" alt="Instagram" height="275" width="625"></a>
+            </div>
+            <div id="map2"></div>
+            <hr color="white" width="100%" size="2" >
+            <div class="title">
+                <p>Lost Lands</p>
+            </div>
+            <div class="text">
+                <p>Lost Lands és el festival més gran de Dubstep que existeix actualment en tot el món. Rivalitza amb el Tomorrowland</p>
+                <p>i l'EDC Las Vegas ja que són els dos festivals més grans del món pero de més d'un estil de música, al contrari que el Lost Lands.</p>
+                <p>El seu creador és l'Excision va ser creat el 2017 on va obtenir molt exit i records en venta d'entrades.</p>
+            </div>
+            <div class="foto">
+                <img src="../fotos/LostLands3.jpg" alt="Instagram" height="275" width="625"></a>
+            </div>
+            <div id="map3"></div>
+            <hr color="white" width="100%" size="2" >
+        </div>
+    </div>
+</body>
+<footer>
+    <p>DISCIPLE© 2019 All Rights Reserved</p>
+    <div class="footer_m">
+        <p>| Contact | Privacy Policy |</p>
+    </div>  
+</footer>
+<script>
+
+    var L;
+    var M;
+    window.onload = function() {
+      L.mapquest.key = 'zwIP5XgnZrqG2OGmp9gpoaUV6Evt67Zo';
+      var map = L.mapquest.map('map', {
+        center: [51.0883454,4.3819819],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 15
+      });
+  
+      L.marker([51.0883454,4.3819819], {
+        icon: L.mapquest.icons.marker({
+          primaryColor: '#cf0a2b',
+          secondaryColor: '#cf0a2b',
+          shadow: true,
+          size: 'lg',
+          symbol: 'T'
+        })
+      })
+      .bindPopup('<h2>Tomorrowland</h2><h3>Boom, Belgium</h3>')
+      .addTo(map);
+  
+      var map2 = L.mapquest.map('map2', {
+        center: [51.0883454,4.3819819],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 15
+      });
+      L.marker([51.0883454,4.3819819], {
+        icon: L.mapquest.icons.marker({
+          primaryColor: '#cf0a2b',
+          secondaryColor: '#cf0a2b',
+          shadow: true,
+          size: 'lg',
+          symbol: 'T'
+        })
+      })
+      .bindPopup('<h2>Tomorrowland</h2><h3>Boom, Belgium</h3>')
+      .addTo(map2);
+
+      var map3 = L.mapquest.map('map3', {
+        center: [51.0883454,4.3819819],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 15
+      });
+      L.marker([51.0883454,4.3819819], {
+        icon: L.mapquest.icons.marker({
+          primaryColor: '#cf0a2b',
+          secondaryColor: '#cf0a2b',
+          shadow: true,
+          size: 'lg',
+          symbol: 'T'
+        })
+      })
+      .bindPopup('<h2>Tomorrowland</h2><h3>Boom, Belgium</h3>')
+      .addTo(map3);
+
+    }
+
+  </script>
+
+  
+
+</html>
